@@ -66,6 +66,6 @@ class Student
       GROUP BY id;
       SQL
 
-    DB[:conn].execute(sql).length
+    DB[:conn].execute(sql)[0].size
   end
 end
