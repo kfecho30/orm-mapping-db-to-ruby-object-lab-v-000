@@ -65,7 +65,7 @@ class Student
       WHERE grade = 9
       GROUP BY id;
       SQL
-      binding.pry
+
     DB[:conn].execute(sql).length
   end
 end
