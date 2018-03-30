@@ -60,10 +60,7 @@ class Student
   end
 
   def self.count_all_students_in_grade_9
-    sql = <<-SQL
-      SELECT * FROM students;
-      SQL
-      binding.pry
-    DB[:conn].execute(sql)
+    self.all
+    binding.pry
   end
 end
