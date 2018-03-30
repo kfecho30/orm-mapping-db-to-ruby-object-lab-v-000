@@ -65,6 +65,6 @@ class Student
       WHERE grade = 9;
       SQL
 
-    DB[:conn].execute(sql)[0].size
+    DB[:conn].execute(sql)[0]
   end
 end
