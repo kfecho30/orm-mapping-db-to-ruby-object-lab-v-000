@@ -64,6 +64,5 @@ class Student
       SQL
 
     DB[:conn].execute(sql).size
-    end
   end
 end
