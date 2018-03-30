@@ -62,7 +62,8 @@ class Student
   def self.count_all_students_in_grade_9
     sql = <<-SQL
       SELECT * FROM students
-      WHERE grade = 9;
+      WHERE grade = 9
+      GROUP BY id;
       SQL
 
     DB[:conn].execute(sql)
